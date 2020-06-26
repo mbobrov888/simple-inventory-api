@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  security:
+    user:
+      name: username
+      password: $2a$10$e6BnZF4LDmOZPyAM0c6iXO2P3VYdr9GLiMRPV2ox2MHnZQOJ3zmqu
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
